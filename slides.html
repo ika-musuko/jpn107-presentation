@@ -1,53 +1,116 @@
 <html>
-<head>
-  <link rel="stylesheet" href="css/reveal.css">
-  <link rel="stylesheet" href="css/theme/white.css">
-  <style>
-  </style>
-</head>
-<body>
-  <div class="reveal">
-    <div class="slides">
 
-      <section id="Title">
-        <h1>IT系のブラック<ruby>企業<rt>きぎょう</rt></ruby></h1>
-        <h4>わかりやすく<ruby>説明<rt>せつめい</rt></ruby>してみる</h4>
-        <img src="https://news.careerconnection.jp/wp-content/uploads/2019/05/190508mr6.jpg" width="30%">
-        <h5><ruby>千松韻<rt>せんしょういん</rt></ruby></h5>
-      </section>
+  <head>
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/white.css">
+    <style>
+    .row {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      width: 100%;
+    }
 
-      <section id="WhatIsIT">
-        <section>
-          <h2>IT系ってどういうこと?</h2>
-          <img src="https://cdn-ak.f.st-hatena.com/images/fotolife/p/pojihiguma/20161201/20161201075852.png">
+    .column {
+      display: flex;
+      flex-direction: column;
+      flex-basis: 100%;
+      flex: 1;
+    }
+
+    .kiken {
+      color: red; 
+    }
+
+    .jouhou {
+      color: #6495ED
+    }
+
+    .eigo {
+      ruby-position: under;
+    }
+    </style>
+  </head>
+
+  <body>
+    <div class="reveal">
+      <div class="slides">
+
+        <section id="Title">
+          <h1>IT系のブラック<ruby>企業<rt>きぎょう</rt></ruby></h1>
+          <h3>Japan's "Black" IT Companies</h3>
+          <h4>わかりやすく<ruby>説明<rt>せつめい</rt></ruby>してみる</h4>
+          <img src="https://news.careerconnection.jp/wp-content/uploads/2019/05/190508mr6.jpg" width="30%">
+          <h5><ruby>千松韻<rt>せんしょういん</rt></ruby></h5>
         </section>
-        <section>
-          <h1>IT系は…</h1>
-          <p><b>I</b>nformation <b>T</b>echnology</p>
-          <img src="https://azby.fmworld.net/usage/closeup/20131030/images/01_2.gif" width="120%">
-        </section>
-      </section>
 
-      <section id="WhatIsBlackKigyou">
-        <section>
+        <section id="WakaranaiBaai">
+          <h2>何かわからない場合は<ruby>遠慮<rt>えんりょ</rt></ruby>しないで聞いてください。</h2>
+          <img src="https://stat.ameba.jp/user_images/20150222/17/noriko517/8d/45/p/t02200323_0534078313225646356.png" width="30%">
+        </section>
+
+        <section id="WhatIsIT">
+          <section>
+            <h2>IT系ってどういうこと?</h2>
+            <img src="https://cdn-ak.f.st-hatena.com/images/fotolife/p/pojihiguma/20161201/20161201075852.png">
+          </section>
+          <section>
+            <h1>IT系とは…</h1>
+            <p><b>I</b>nformation <b>T</b>echnology</p>
+            <img src="https://azby.fmworld.net/usage/closeup/20131030/images/01_2.gif" width="120%">
+          </section>
+        </section>
+
+        <section id="WhatIsBlackKigyou">
+          <section>
             <h2>ブラック<ruby>企業<rt>きぎょう</rt>ってどういうこと?</h2>
             <img src="https://rakugakiicon.com/ri/wp-content/uploads/2015/05/1c815935462346fc3d4d80266b10e706.png" width="40%">
+          </section>
+          <section>
+            <h2>ブラック<ruby>企業<rt>きぎょう</rt>とは…</h2>
+            <div class="row">
+              <div class="column" style="font-size: 40px">
+                <ul>
+                  <li class="fragment">
+                    <ruby><ruby><span class="jouhou">労働基準法</span><rt>ろうどうきじゅんほう</rt></ruby><rt>labor standard laws</rt></ruby>に<ruby><ruby><span class="kiken">違反</span><rt>いはん</ruby><rt>violate</rt></ruby>する会社
+                  </li>
+                  <li class="fragment">
+                    <ruby><span class="jouhou">残業</span><rt>ざんぎょう</rt></ruby>が<ruby>非常<rt>ひじょう</rt></ruby>に多い会社
+                  </li>
+                  <li class="fragment">
+                    <span class="jouhou">パワハラ、モラハラ</span>などがよく起こる会社
+                  </li>
+                  <li class="fragment">
+                    <span class="jouhou">労働者</span><sub><sup>（とくに若者）</sup></sub>を<span class="kiken">使い捨て</span>にする会社
+                  </li>
+                </ul>
+              </div>
+              <div class="column">
+                <img class="fragment" src="https://t3.ftcdn.net/jpg/00/58/96/24/500_F_58962427_eNsjbp5VrxdMmafeLbLJ2P4irO1XBRVf.jpg">
+              </div>
+            </div>
+          </section>
+          <section>
+            <h3>日本にあるブラック企業</h3>
+            <embed src="https://blackcorpmap.com/" width="900" height="400"></embed>
+            <small>🖙  blackcorpmap.com</small>
+            <p>ブラック企業の
+            <ruby>
+              <ruby>割合
+                <rt>わりあい</rt>
+              </ruby>
+              <rt class="eigo">percentage</rt>
+            </ruby>
+            は<strong style="font-size:72px">66.8%</strong>らしいです。
+            </p>
+          </section>
         </section>
-        <section>
-            <h1>ブラック<ruby>企業<rt>きぎょう</rt>は…</h1>
-        </section>
-        <section>
-          <h3>日本にあるブラック企業</h3>
-          <img src="https://snipboard.io/KlNZcz.jpg" width="80%"> 
-          <p>🖙  blackcorpmap.com</p>
-        </section>
-      </section>
 
+      </div>
     </div>
-  </div>
-  <script src="js/reveal.js"></script>
-  <script>
-    Reveal.initialize();
-  </script>
-</body>
+    <script src="js/reveal.js"></script>
+    <script>
+      Reveal.initialize();
+    </script>
+  </body>
 </html>
