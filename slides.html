@@ -30,8 +30,28 @@
       color: #6495ED !important;
     }
 
+    .abunai {
+      color: #e6d455 !important;
+    }
+
+    .seikou {
+      color: #45FF55 !important;
+    }
+
     .eigo {
       ruby-position: under;
+    }
+
+    .whitebg {
+      background-color: #ffffff;
+      border-radius: 5px;
+    }
+
+    .super-kiken {
+      color: #ff3333 !important;
+      opacity: 1;
+      font-size: 2.4em;
+      font-weight: bold;
     }
     </style>
   </head>
@@ -47,11 +67,13 @@
           <h3><ruby>千松韻<rt>せんしょういん</rt></ruby></h3>
         </section>
 
+        <!--
         <section id="WakaranaiBaai">
           <p style="font-size: 60px">何かわからない場合は<ruby>遠慮<rt>えんりょ</rt></ruby>しないで聞いてください。</p>
           <img src="https://stat.ameba.jp/user_images/20150222/17/noriko517/8d/45/p/t02200323_0534078313225646356.png" width="20%">
           <p style="font-size: 34px;">みなさんのために<ruby>振り仮名<rt>ふりがな</rt>や<ruby><ruby>翻訳<rt>ほんやく</rt></ruby><rt>translation</rt></ruby>を</ruby>おつけしました。</p>
         </section>
+        -->
 
         <section id="WhatIsIT">
           <section>
@@ -61,7 +83,7 @@
           <section>
             <h1>IT系とは…</h1>
             <p><b>I</b>nformation <b>T</b>echnology</p>
-            <img src="https://azby.fmworld.net/usage/closeup/20131030/images/01_2.gif" width="120%">
+            <img src="imgs/ittoha.png" width="120%">
           </section>
         </section>
 
@@ -74,9 +96,10 @@
             <h2>ブラック<ruby>企業<rt>きぎょう</rt>とは…</h2>
             <div class="row">
               <div class="column" style="font-size: 40px">
-                <ul style="font-size: 40px">
+                <ul style="font-size: 37px">
                   <li class="fragment">
-                    <ruby><ruby><span class="jouhou">労働基準法</span><rt>ろうどうきじゅんほう</rt></ruby><rt>labor standard laws</rt></ruby>に<ruby><ruby><span class="kiken">違反</span><rt>いはん</ruby><rt>violate</rt></ruby>する
+                    <!--<ruby><ruby><span class="jouhou">労働基準法</span><rt>ろうどうきじゅんほう</rt></ruby><rt>labor standard laws</rt></ruby>に<ruby><ruby><span class="kiken">違反</span><rt>いはん</ruby><rt>violate</rt></ruby>する-->
+                    <ruby><span class="jouhou">労働基準法</span><rt>ろうどうきじゅんほう</rt></ruby>に<ruby><span class="kiken">違反</span><rt>いはん</ruby>する
                   </li>
                   <li class="fragment">
                     <ruby><span class="jouhou">残業</span><rt>ざんぎょう</rt></ruby>が<ruby>非常<rt>ひじょう</rt></ruby>に多い
@@ -94,39 +117,53 @@
               </div>
             </div>
           </section>
-          <section id="BlackKigyouMap">
-            <h3>日本にあるブラック企業</h3>
-            <embed src="https://blackcorpmap.com/" width="900" height="400"></embed>
-            <small>🖙  <a href="blackcorpmap.com">blackcorpmap.com</a></small>
-            <p>ブラック企業の
-            <ruby>
-              <ruby>割合
-                <rt>わりあい</rt>
-              </ruby>
-              <rt class="eigo">percentage</rt>
-            </ruby>
-            は<strong style="font-size:72px; color: #af3334;">66.8%</strong>らしいです。
-            </p>
-          </section>
         </section>
 
         <section id="ITIken">
-          <section>
+          <section id="NegativeIken">
             <h3 style="font-size: 47px">日本人はIT系に対してどういう意見がある？</h3>
             <span class="fragment">
               <img src="https://snipboard.io/UKfQFq.jpg">
-              <div style="color: #e6d455">
+              <div class="abunai">
                 <p>「働いているIT系がブラックすぎる」</p>
               </div>
             </span>
-            <div style="color: #e6d455">
+            <div class="abunai">
               <p class="fragment">「ITはどこの会社もブラックなんだろうか」</p>
               <p class="fragment">「ITの他の<ruby>職種<rt>しょくしゅ</rt></ruby>についても知りたい」</p>
             </div>
           </section>
-          <section>
-            <h2>なぜこういう意見がある？</h2>
+          <section id="PositiveIken">
+            <h3>一方こういう意見もあるらしい…</h3>
+            <div class="seikou">
+              <div class="fragment">
+                <img src="http://masurao-roppongi.com/wp-content/uploads/meeting2.jpg" width="30%">
+                <p>「ITは<ruby>待遇<rt>たいぐう</rt></ruby>が良く、ブラック企業は少ないって聞いてたけど…。」</p>
+              </div>
+              <p class="fragment">「僕の会社がブラックかどうかに関しては…（残業）はほとんどないからブラック的な様子ないかなと思っています。」</p>
+            </div>
           </section>
+          <section id="IttaiTadashii">
+            <img src="https://type.jp/tensyoku-knowhow/wp-content/uploads/01_pg_main-2.png" width="29%">
+            <div class="whitebg">
+              <p class="super-kiken">いったい<br/>どっちが正しいのか？</p>
+            </div>
+            <img src="https://cloudlance-motio.work/img/pc_kirai_ojiisan.png">
+          </section>
+        </section>
+
+
+        
+        <section id="BlackKigyouMap" data-background-iframe="https://blackcorpmap.com/" data-background-interactive>
+          <div class="fragment" style="position: absolute; width: 35%; left: 0; top: 100px; box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px; text-align: left;">
+            <h4>日本におけるブラック企業</h4>
+            <small>🖙  <a href="https://blackcorpmap.com">blackcorpmap.com</a></small>
+          </div>
+          <div class="fragment" style="position: absolute; width: 35%; right: 0; bottom: -600px; box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px; text-align: left;">
+          <p style="font-size: 31px">ブラック企業の
+          <ruby>割合<rt>わりあい</rt></ruby>
+          は<strong style="font-size:72px; color: #af3334;">66.8%</strong>らしいです。
+          </p>
         </section>
 
         <section id="SES">
@@ -143,12 +180,25 @@
               <li>
             </ul>
           </section>
+
+          <section id="BlackMikiwamekata">
+          </section>
         </section>
       </div>
     </div>
     <script src="js/reveal.js"></script>
     <script>
-      Reveal.initialize();
+      Reveal.initialize({preloadIframes: true});
     </script>
   </body>
 </html>
+
+<!-- sources 
+https://hataraquest.com/it-black-company
+https://engineer-club.jp/ses
+https://it-kankei.com/what-to-do/
+https://roudou-pro.com/columns/57/
+https://blackcorpmap.com/
+https://honyuki39c.com/black-company/
+https://www.youtube.com/watch?v=J_A9Lr6KQdI
+-->
